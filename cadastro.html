@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./cadastro.css">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <h1>Faça seu cadastro</h1>
+    <form action="/dados-form" method="post">
+
+        <!--Form de dados gerais-->
+        <fieldset>
+            <legend>Dados gerais</legend>
+            <label for="name">Nome:</label>
+            <input type="text" minlength="3" id="name" name="name" required>
+            <label for="date_of_birth">Data de nascimento:</label>
+            <input type="date" minlength="1" id="date_of_birth" name="date_of_birth" required>
+            <label for="cpf">CPF:</label>
+            <input type="cpf" minlength="11" id="cpf" name="cpf" required>
+            <label for="telephone">Telefone:</label>
+            <input type="tel" minlength="3" id="tel" name="tel" required>
+            <label for="email">Email:</label>
+            <input type="email" minlength="3" id="email" name="email" value="ex: nome@gmail.com" required>
+        </fieldset>
+
+        <!--Form de endereço-->
+        <fieldset>
+            <legend>Endereço</legend>
+            <label for="tipoDeEndereço">Tipo:</label>
+            <select id="tipoDeEndereço">
+                <option value="">Selecione</option>
+                <option value="">Rua</option>
+                <option value="">Rodovia</option>
+                <option value="">Estrada</option>
+                <option value="">Outros</option>
+            </select>
+            <label for="logradouro">Logradouro</label>
+            <input type="text" minlength="3" id="logradouro">
+            <label for="numero">Número</label>
+            <input type="number" id="numero">
+            <label for="complemento">Complemento</label>
+            <input type="text" minlength="3" id="complemento">
+        </fieldset>
+
+        <!--Campo de fale conosco-->
+        <fieldset>
+            <legend>Fale conosco</legend>
+            <label for="msg">Mensagem:</label>
+            <textarea type="text" id="msg" name="msg" cols="30" rows="4"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <button type="submit" value="to_send">Enviar mensagem</button>
+
+            <button type="reset">Limpar formulário</button>
+
+        </fieldset>
+    </form>
+</body>
+
+</html>

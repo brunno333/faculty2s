@@ -1,0 +1,36 @@
+@font-face {
+    font-family: "Rubik";
+    src: url(./RubikStorm-Regular.woff2);
+}
+
+body {
+
+    background-image: url(./bg-site.jpg);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Rubik";
+    color: rgb(141, 192, 249);
+}
+
+select,
+fieldset,
+label,
+textarea,
+input,
+button {
+    background-color: black;
+    color: aliceblue;
+}
+
+fieldset {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px 15px;
+    padding: 15px;
+}
