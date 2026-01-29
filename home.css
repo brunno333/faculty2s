@@ -1,0 +1,10 @@
+/*pseudo classe :hover*/
+#link:hover {
+    color: orange;
+}
+
+/*pseudo elemento ::first-line*/
+#frase::first-line {
+    color: orange;
+    text-transform: uppercase;
+}
