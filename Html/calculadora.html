@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../calculadora.js"></script>
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <h1>Calculator</h1>
+    <form action="">
+        <label>Value A</label> <br>
+        <input type="number" id="vA"> <br>
+        <label>Value B</label> <br>
+        <input type="number" id="vB"> <br>
+
+        <label>Operation:</label>
+        <select id="oper">
+            <option value="">Addition</option>
+            <option value="">Subtraction</option>
+            <option value="">Division</option>
+            <option value="">Multiplication</option>
+            <option value="">Exponential</option>
+        </select> <br>
+        <a href="#" onclick="executar()">Calculate</a> <br>
+    </form>
+    <div id="res">Result</div>
+
+</body>
+
+</html>
